@@ -554,12 +554,12 @@ class Stare:
 
 def min_max(stare):
 	#De corectat min_max
-    if stare.adancime == 0 or stare.tabla_joc.final():
-        stare.scor = stare.tabla_joc.estimeaza_scor(stare.jucator_opus,stare.adancime)
+    if stare.adancime == 0 or stare.tabla_joc.final(stare.j_curent):
+        stare.scor = stare.tabla_joc.estimeaza_scor(stare.j_curent,stare.adancime)
         return stare
 
     # calculez toate mutarile posibile din starea curenta
-    stare.mutari_posibile = stare.mutari(stare.j_curent)
+    stare.mutari_posibile = stare.mutari()
 
     # aplic algoritmul minimax pe toate mutarile posibile (calculand astfel subarborii lor)
     mutari_scor = [min_max(mutare) for mutare in stare.mutari_posibile]
