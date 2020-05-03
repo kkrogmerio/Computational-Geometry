@@ -1,3 +1,10 @@
+#In logic and computer science, the Boolean satisfiability problem (sometimes called propositional satisfiability problem and 
+#abbreviated SATISFIABILITY or SAT) is the problem of determining if there exists an interpretation that satisfies a given Boolean formula. e all possible variable assignments and the formula is unsatisfiable. 
+#For example, the formula "a AND NOT b" is satisfiable because one can find the values 
+#a = TRUE and b = FALSE, which make (a AND NOT b) = TRUE. In contrast, "a AND NOT a" is unsatisfiable.
+#SAT is the first problem that was proven to be NP-complete; see Cook–Levin theorem. 
+#This means that all problems in the complexity class NP, 
+#which includes a wide range of natural decision and optimization problems, are at most as difficult to solve as SAT.
 n,m=map(int,input().split())
 c=[0]*m
 for i in range(m):
