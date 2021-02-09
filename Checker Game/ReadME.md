@@ -1,7 +1,0 @@
-In computer networking, the Reliable User Datagram Protocol (RUDP) is a transport layer protocol designed at Bell Labs for the Plan 9 operating system. It aims to provide a solution where UDP is too primitive because guaranteed-order packet delivery is desirable, but TCP adds too much complexity/overhead. In order for RUDP to gain higher quality of service, RUDP implements features that are similar to TCP with less overhead.
-In order to ensure quality, it extends UDP by means of adding the following features:
-
-1.Acknowledgment of received packets
-2.Windowing and flow control
-3.Retransmission of lost packets
-4.Over buffering (Faster than real-time streaming)
